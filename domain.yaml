@@ -1,0 +1,14 @@
+# Configuration for ping monitor exporter
+
+domains:
+  # more domains can be added here or modified
+  - google.com
+  - github.com
+  - example.com
+  - 8.8.8.0 # dummy domain for something that is always down
+
+# time interval between pings is set to 5 seconds by default
+time_interval: 5
+
+# PORT number is set to 8000 by default by me, feel free to change if it in use by another program
+port_number: 8000
