@@ -96,29 +96,29 @@ prometheus.exe
 
 ### 2. Import Dashboard
 
-  - Create a new dashboard in Grafana
+  - import the dashboard from the json file in the repo, or create your own new dashboard in Grafana
 
-Add panels using json provided
+  refer to this documentation if you want to create a dashboard from scratch.
+  - https://grafana.com/docs/grafana/latest/datasources/prometheus/
+
+if you import dashboard using json
+- Add panels using json provided
 
 ### 📊 Dashboard Panels
 
-Server Down Status
+- Server Down Status
 
-Uses ping_up metric
+  - Uses ping_up metric
+  - Displays servers as Running (1) or Down (0)
 
-Displays servers as Running (1) or Down (0)
+- Average RTT Ping (ms)
+  - Line graph showing latency trends
 
-Average RTT Ping (ms)
+- Heatmap displaying min/max values across time
+  -  Ping RTT Min/Max (ms)
 
-Line graph showing latency trends
-
-Ping RTT Min/Max (ms)
-
-Heatmap displaying min/max values across time
-
-Average RTT Gauges
-
-Bar/Donut gauges for latest RTT values
+- Average RTT Gauges
+  - Bar/Donut gauges for latest RTT values
 
 ## 🖼️ Example Dashboard
 
